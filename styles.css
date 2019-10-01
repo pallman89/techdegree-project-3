@@ -21,10 +21,16 @@ header {
    
   }
 
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
  .container {
    max-width: 600px;
    width: 100%;
    margin: auto;
+   background: lightblue;
+   
  }
  
   body {
@@ -48,7 +54,9 @@ header {
   }
 
 
-
+  input [zip]{
+    width: 30%;
+  }
 
 
 
@@ -71,3 +79,16 @@ header {
 
 
 @media (min-width: 768px) {
+
+  .user-info {
+   display: flex;
+   flex-direction: row;
+  }
+
+  .first-form label {
+    flex-basis: 30%;
+  }
+
+  .first-form input {
+    flex-basis: 70%;
+  }
