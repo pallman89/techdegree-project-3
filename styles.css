@@ -1,0 +1,73 @@
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+header {
+    background:#125350;
+    color:white;
+    margin: 0 auto;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: center;
+    width: 100%;
+   
+  }
+  
+  fieldset {
+    border: none;
+   
+  }
+
+ .container {
+   max-width: 600px;
+   width: 100%;
+   margin: auto;
+ }
+ 
+  body {
+    margin: 0 auto;
+    background: rgb(202, 202, 202);
+   
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+
+
+
+  textarea {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+  
+
+
+
+/* Footer */
+
+  footer {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
