@@ -164,6 +164,11 @@ fieldset {
   flex-direction: column;
 }
 
+.second-form {
+  font-size: 1.25em;
+  
+}
+
 
   /* Footer */
   /* ------ */
