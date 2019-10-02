@@ -1,74 +1,180 @@
 
-
+/* Base Stles */
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+ 
+}
+body {
+  margin: 0 auto;
+  background: #ffffff;
+  font-family: 'saira', sans-serif;
+  color: rgb(0, 0, 0);
+ 
 }
 
-
 header {
-    background:#125350;
+    background:#3b4455;
     color:white;
     margin: 0 auto;
     padding-top:10px;
     padding-bottom:10px;
     text-align: center;
     width: 100%;
+    font-size: 1.5em;
+    font-weight: 800;
+    
    
   }
   
-  fieldset {
-    border: none;
-   
-  }
-
-  .user-info {
-    display: flex;
-    flex-direction: column;
-  }
  .container {
-   max-width: 600px;
+   max-width: 768px;
    width: 100%;
    margin: auto;
-   background: lightblue;
    
  }
- 
-  body {
-    margin: 0 auto;
-    background: rgb(202, 202, 202);
-   
+
+  .line1 {
+    border: 2px solid #07d4b2fa;
+    width: 90%;
+    margin-bottom: 2px;
+  }
+  .line2 {
+    border: 1px solid rgb(112, 109, 109);
+    width: 90%;
+    margin-top: 1px;
+  }
+  .line3 {
+    border: 1px solid #07d4b2fa;
+    width: 90%;
   }
 
-  h2 {
+  h2, p {
     text-align: center;
   }
-  
+
+  p{
+    color: rgb(148, 148, 148)
+  }
 
 
+
+/* ------FORM------ */
+/* ---------------- */
+
+
+#zip {
+  max-width: 25%;
+}
 
   textarea {
     width: 100%;
-  }
-  button {
-    width: 100%;
-  }
-
-
-  input [zip]{
-    width: 30%;
+    height: 150px;
+    transition: height 2s;
   }
 
-
-
-
+  textarea:focus {
+    height: 225px;
+  }
   
 
+input[type=text], 
+input[type=email],
+input[type=tel],
+textarea,
+select {
+  background: rgb(240, 240, 240);
+  margin-bottom: 10px;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 2px rgb(127, 127, 128);
+  font-size: 16px;
+  font-family: 'saira', sans-serif;
+  
+  
+}
+
+select {
+  height: 48px;
+}
+
+button {
+  background: #07d4b2fa;
+  box-shadow: 1px 2px 5px rgb(127, 127, 128);
+  padding: 3px;
+  font-size: 1.5em;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+  width: 100%;
+  font-family: 'saira', sans-serif;
+  
+  
+}
+
+button:hover {
+  background-color: #3b4455;
+}
+
+legend {
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+label {
+  line-height: 3em;
+}
+
+input::placeholder {
+  text-align: right;
+  font-style: italic;
+  padding-right: 2px;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  background-color: white;
+}
+
+input:focus,
+select:focus {
+  background-color: #07d4b2fa;
+  outline: none;
+}
+
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+button:focus {
+  box-shadow: 1px 2px 25px #07d4b2fa;
+}
+
+fieldset {
+  border: none;
+ 
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
 
 
-/* Footer */
+  /* Footer */
+  /* ------ */
 
   footer {
+    margin-top: 8px;
     text-align: center;
+    padding-bottom: 10em;
+    padding-top: 2em;
+    color: rgb(148, 148, 148);
+  
 }
 
 
@@ -76,6 +182,9 @@ header {
 
 
 
+
+/* Media Query */
+/* ----------- */
 
 
 @media (min-width: 768px) {
@@ -89,6 +198,17 @@ header {
     flex-basis: 30%;
   }
 
-  .first-form input {
+  .first-form input, select {
     flex-basis: 70%;
+  }
+  form {
+    border: none;
+    box-shadow:  2px 2px 42px gray;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 4em;
+  }
+
+  
+  
   }

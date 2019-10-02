@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira&display=swap" rel="stylesheet">
     <title>The Code Review</title>
 </head>
 <body >
     <header > The Code Review</header>
     <div class="container">
-    <form>
-        <h2>Sign Up for our newsletter</h2>
+    <form action="index.html" method="post">
+        <h2>Signup for our newsletter</h2>
         <p>Get the latest on how your code is doing right in your inbox</p>
-        <hr>
+        <hr class="line1">
+        <hr class="line2">
 
         <fieldset>
             <legend>Contact Information</legend>
@@ -21,16 +23,16 @@
             <div class="first-form">
                 <div class="user-info">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="user_name">
+                    <input type="text" id="name" name="user_name" placeholder="Required" required >
                 </div>
            
                 <div class="user-info">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="user_email">
+                    <input type="email" id="email" name="user_email" placeholder="Required" required >
                 </div>
                 <div class="user-info">
                     <label for="phone">Phone Number</label>
-                    <input type="text" id="phone" name="user_phone">
+                    <input type="tel" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx">
                 </div>
                 <div class="user-info">
                     <label for="address">Street Address</label>
@@ -43,57 +45,58 @@
 
                 <div class="user-info">
                     <label for="state">State</label>
-                    <select id="state" name="user_state">
-                        <option>AL</option>
-                        <option>AK</option>
-                        <option>AZ</option>
-                        <option>AR</option>
-                        <option>CA</option>
-                        <option>CO</option>
-                        <option>CT</option>
-                        <option>DE</option>
-                        <option>FL</option>
-                        <option>GA</option>
-                        <option>HI</option>
-                        <option>ID</option>
-                        <option>IL</option>
-                        <option>IN</option>
-                        <option>IA</option>
-                        <option>KS</option>
-                        <option>KY</option>
-                        <option>LA</option>
-                        <option>ME</option>
-                        <option>MD</option>
-                        <option>MA</option>
-                        <option>MI</option>
-                        <option>MN</option>
-                        <option>MS</option>
-                        <option>MO</option>
-                        <option>MT</option>
-                        <option>NE</option>
-                        <option>NV</option>
-                        <option>NH</option>
-                        <option>NJ</option>
-                        <option>NM</option>
-                        <option>NY</option>
-                        <option>NC</option>
-                        <option>ND</option>
-                        <option>OH</option>
-                        <option>OK</option>
-                        <option>OR</option>
-                        <option>PA</option>
-                        <option>RI</option>
-                        <option>SC</option>
-                        <option>SD</option>
-                        <option>TN</option>
-                        <option>TX</option>
-                        <option>UT</option>
-                        <option>VT</option>
-                        <option>VA</option>
-                        <option>WA</option>
-                        <option>WV</option>
-                        <option>WI</option>
-                        <option>WY</option>
+                    <select id="state" name="user_state" >
+                        <option value="" disabled selected hidden>Choose State</option>
+                        <option value="Alabama">AL</option>
+                        <option value="Alaska">AK</option>
+                        <option value="Arizona">AZ</option>
+                        <option value="Arkansas">AR</option>
+                        <option value="California">CA</option>
+                        <option value="Colorado">CO</option>
+                        <option value="Connecticut">CT</option>
+                        <option value="Deleware">DE</option>
+                        <option value="Florida">FL</option>
+                        <option value="Georgia">GA</option>
+                        <option value="Hawaii">HI</option>
+                        <option value="Idaho">ID</option>
+                        <option value="Illinois">IL</option>
+                        <option value="Indiana">IN</option>
+                        <option value="Iowa">IA</option>
+                        <option value="Kansas">KS</option>
+                        <option value="Kentucky">KY</option>
+                        <option value="Louisiana">LA</option>
+                        <option value="Maine">ME</option>
+                        <option value="Maryland">MD</option>
+                        <option value="Massachusetts">MA</option>
+                        <option value="Michigan">MI</option>
+                        <option value="Minnesota">MN</option>
+                        <option value="Mississippi">MS</option>
+                        <option value="Missouri">MO</option>
+                        <option value="Montana">MT</option>
+                        <option value="Nebraska">NE</option>
+                        <option value="Nevada">NV</option>
+                        <option value="New Hampshire">NH</option>
+                        <option value="New Jersey">NJ</option>
+                        <option value="New Mexico">NM</option>
+                        <option value="New York">NY</option>
+                        <option value="North Carolina">NC</option>
+                        <option value="North Dakota">ND</option>
+                        <option value="Ohio">OH</option>
+                        <option value="Oklahoma">OK</option>
+                        <option value="Oregon">OR</option>
+                        <option value="Pennsylvania">PA</option>
+                        <option value="Rhode Island">RI</option>
+                        <option value="South Carolina">SC</option>
+                        <option value="South Dakota">SD</option>
+                        <option value="Tennessee">TN</option>
+                        <option value="Texas">TX</option>
+                        <option value="Utah">UT</option>
+                        <option value="Vermont">VT</option>
+                        <option value="Virginia">VA</option>
+                        <option value="Washington">WA</option>
+                        <option value="West Virginia">WV</option>
+                        <option value="Wisonsin">WI</option>
+                        <option value="Wyoming">WY</option>
                     </select>
                 </div>
 
@@ -101,44 +104,47 @@
                     <label for="zip">Zip Code</label>
                     <input type="text" id="zip" name="user_zip">
                 </div>
-                
+
             </div>
         </fieldset>
-
+        <hr class="line3">
         <fieldset>
+                
             <legend>Newsletter</legend>
            
             <div class="second-form">
-                <label >Select the newsletter you would like to receive </label><br>
+                <label  >Select the newsletter you would like to receive: </label><br>
 
-                <input type="checkbox" id="html_news" name="html_news">
+                <input type="checkbox" id="html_news" value="html_news" name="newsletter_selection">
                 <label   for="html_news">HTML News</label><br>
 
-                <input type="checkbox" id="css_news" name="css_news">
+                <input type="checkbox" id="css_news" value="css_news" name="newsletter_selection">
                 <label   for="css_news">CSS News</label><br>
 
-                <input  type="checkbox" id="javascript_news" name="javascript_news">
+                <input  type="checkbox" id="javascript_news" value="javascript_news" name="newsletter_selection">
                 <label  for="javascript_news">Javascript News</label><br>
 
+                
 
-                <label>Newsletter Format</label><br>
+                <label >Newsletter Format:</label><br>
 
-                <input type="radio" id="html_radio" name="html_radio">
+                <input type="radio" id="html_radio" value="html_radio" name="format_selection">
                 <label for="html_radio">HTML</label><br>
 
-                <input type="radio" id="plaintext_radio" name="plaintext_radio">
+                <input type="radio" id="plaintext_radio" value="plaintext_radio" name="format_selection">
                 <label for="plaintext_radio">Plain text</label><br>
 
-                <label>Other topics you'd like to hear about</label><br>
-                <textarea></textarea>
+                <label for="other_topics">Other topics you'd like to hear about:</label><br>
+                <textarea id="other_topics" name="other_topics"></textarea>
 
             </div>
+            <button type="button">Sign Up</button>
         </fieldset>
     
-        <button type="button">Sign Up</button>
+        
     </form>
-</div>
-    <footer>Copyright The Code Review </footer>
+    </div>
+    <footer>&copy; The Code Review </footer>
 
 </body>
 </html>
